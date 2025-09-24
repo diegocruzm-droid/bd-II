@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Administrativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="logo-container">
+            <img src="Logo.jpg" alt="Logo" id="logo">
+        </div>
+        <div id="title-container">
+        <h1>Diego Armando Mulato Cruz</h1>
+        </div>
+
+        <div id="login-container">
+            <button id="login-btn">Iniciar sesión</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="admin-panel" style="display:none;">
+            <h2>Panel de administración</h2>
+            <button id="add-folder-btn">Agregar Carpeta</button>
+            <button id="delete-folder-btn">Eliminar Carpeta</button>
+            <button id="edit-folder-btn">Editar Carpeta</button>
+        </section>
+        <section id="user-settings" style="display:none;">
+            <h2>Configuración de Usuario</h2>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" value="admin"><br><br>
+        
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" value="1234"><br><br>
+        
+            <button id="save-user-btn">Guardar cambios</button>
+        </section>
+        <section id="folders-container">
+            <!-- Las 16 carpetas se crearán dinámicamente aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 diego-droid</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
